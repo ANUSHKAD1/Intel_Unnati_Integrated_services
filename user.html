@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.jpeg"/>
+    <title>AyuCare: User Login </title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="user.css">
+    <script src="user.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="#" class="logo">
+                <img src="logo.jpeg" alt="logo">
+                <h2>AyuCare</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <!-- <li><a href="#">Courses</a></li> -->
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <button class="login-btn">USER LOG IN</button>
+        </nav>
+    </header>
+
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p><b>Please log in using your personal information to stay connected with us.</b></p>
+            </div>
+            <div class="form-content">
+                <h2>USER LOGIN</h2>
+                <form action="userlogin.php" method="POST">
+                    <div class="input-field">
+                        <input type="text" id="username" name="username"required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" name="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community, please sign up using your personal information.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="useradd.php" method="POST">
+                    <div class="input-field">
+                        <input type="text" id="value1" name="value1" required>
+                        <label>Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="value2" name="value2" required>
+                        <label>Enter your email/username</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="value3" name="value3" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-list">
+        <a href="https://www.healthline.com/health/fitness-exercise/fat-burning-heart-rate" class="card-item">
+            <img src="fatloss.jpg" alt="Card Image">
+            <span class="developer">Obesity</span>
+            <h3>What’s a Fat-Burning Heart Rate, and How Is It Calculated?</h3>
+        </a>
+        <a href="https://www.healthline.com/nutrition/get-your-vitamin-p-why-pleasure-matters-when-it-comes-to-what-you-eat"
+         class="card-item">
+            <img src="vitp.jpg" alt="Card Image">
+            <span class="designer">Mental Health</span>
+            <h3>Get Your Vitamin P: Why Pleasure Matters When It Comes to What You Eat</h3>
+        </a>
+        <a href="https://www.healthline.com/health/relief-from-chronic-migraine#acute-treatments" class="card-item">
+            <img src="migraine.jpg" alt="Card Image">
+            <span class="editor">Migraine</span>
+            <h3>Relief from Chronic Migraine: Current and Emerging Treatments</h3>
+        </a>
+    </div>
+    <div class="card-list">
+        <a href="https://www.medicalnewstoday.com/articles/psoriasis-and-chronic-inflammation" class="card-item">
+            <img src="psoriasis.jpg" alt="Card Image">
+            <span class="developer">Skin Health</span>
+            <h3>Managing chronic inflammation with psoriasis</h3>
+        </a>
+        <a href="https://www.medicalnewstoday.com/articles/plastic-bottles-diabetes-risk"
+         class="card-item">
+            <img src="plastic.jpg" alt="Card Image">
+            <span class="designer">Diabetes</span>
+            <h3>BPAs in plastic bottles linked to type 2 diabetes risk, researchers say</h3>
+        </a>
+        <a href="https://www.medicalnewstoday.com/articles/turmeric-black-pepper-supplements-linked-liver-injury" class="card-item">
+            <img src="turmeric.jpg" alt="Card Image">
+            <span class="editor">Liver Health</span>
+            <h3>Turmeric and black pepper supplements linked to liver injury in some people</h3>
+        </a>
+    </div>
+</body>
+</html>
